@@ -1,0 +1,45 @@
+/* src/components/Sidebar.css */
+.sidebar {
+  width: auto; /* Allow width to be based on content */
+  min-width: 200px; /* Ensure a minimum width to avoid being too small */
+  background-color: #333;
+  color: white;
+  height: 100vh; /* Full viewport height */
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 0px;
+  border-right: 1px solid #444; /* Optional: border for better visibility */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 5px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 12px;
+  transition: background-color 0.3s;
+}
+
+.sidebar-logo {
+  width: 20px; /* Adjust size as necessary */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between logo and text */
+}
+
+.sidebar a:hover {
+  background-color: #444;
+}
+
+.separator {
+  border-bottom: 1px solid #555; /* Color and thickness of the line */
+  margin: 10px 10px; /* Space around the line */
+  border-radius: 16px;
+}
