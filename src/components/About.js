@@ -7,18 +7,18 @@ const About = () => {
   return (
     <div className="box-container">
       <Box backgroundColor={colors.pink} className="box-default">
-        <img src={portraitImage} className="portrait" alt="Portrait" />
-        <h2>About</h2>
-        <p>
-          <i>
-            <b>Billy Woodward</b>
-          </i>{" "}
-          is both extremely handsome, and a seasoned React developer.
-        </p>
+        <div className="info">
+          <img src={portraitImage} className="portrait" alt="Portrait" />
+          <h2>About</h2>
+          <p>
+            <i>
+              <b>Billy Woodward</b>
+            </i>{" "}
+            is both extremely handsome, and a seasoned React developer.
+          </p>
+        </div>
       </Box>
-      <Box className="box-default" backgroundColor={colors.orange}>
-        <h2> Wot</h2>
-      </Box>
+
       <Box className="box-full-width" backgroundColor={colors.green}>
         <h2>New area</h2>
       </Box>

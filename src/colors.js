@@ -5,6 +5,7 @@ const colors = {
   lightblue: "rgb(184	208	225	)",
   yellow: "rgb(248	216	86	)",
   blue: "rgb(81 89 241)",
+  purple: "rgb(153	118	191	)",
 };
 
 export default colors;

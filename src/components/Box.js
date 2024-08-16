@@ -1,7 +1,10 @@
-function Box({ backgroundColor, children, className }) {
+function Box({ backgroundColor, children, className, textColor }) {
   return (
-    <div className={className} style={{ backgroundColor: backgroundColor }}>
-      <div className="info">{children}</div>
+    <div
+      className={className}
+      style={{ backgroundColor: backgroundColor, color: textColor }}
+    >
+      <div>{children}</div>
     </div>
   );
 }
