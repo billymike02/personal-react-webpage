@@ -2,9 +2,11 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
-import Home from "./components/Home";
+import Home from "./components/3D";
 import About from "./components/About";
 import "./App.css";
+import Creative from "./components/3D";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -13,8 +15,10 @@ function App() {
         <Sidebar />
         <div className="content">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<About />} />
             <Route path="/about" element={<About />} />
+            <Route path="/creative" element={<Creative />} />
+            <Route path="/projects" element={<Projects />} />
           </Routes>
         </div>
       </div>

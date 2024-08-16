@@ -10,20 +10,23 @@ const Sidebar = () => {
   return (
     <nav className="sidebar">
       <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
+        <h3 className="name">Bill Woodward</h3>
         <li>
           <Link to="/about">About</Link>
         </li>
-        <div className="separator"></div>
+        <li>
+          <Link to="/projects">Projects</Link>
+        </li>
+        <li>
+          <Link to="/creative">Creative</Link>
+        </li>
+
         <li>
           <a
             href="https://linkedin.com/wmwoodward2002"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={linkedInLogo} alt="LinkedIn" className="sidebar-logo" />
             LinkedIn
           </a>
         </li>
@@ -33,7 +36,6 @@ const Sidebar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={sketchfabLogo} alt="Sketchfab" className="sidebar-logo" />
             Sketchfab
           </a>
         </li>
@@ -43,7 +45,6 @@ const Sidebar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={githubLogo} alt="GitHub" className="sidebar-logo" />
             GitHub
           </a>
         </li>

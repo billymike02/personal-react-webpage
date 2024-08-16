@@ -1,0 +1,29 @@
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust as needed */
+  overflow: hidden; /* Ensure no overflow if needed */
+}
+
+.heading {
+  margin-left: 20px;
+  margin-top: 0; /* Ensure there's no top margin */
+  margin-bottom: 0; /* Ensure there's no bottom margin */
+  position: absolute;
+  color: white;
+  bottom: 5%; /* Keep this if you want the heading near the bottom */
+  font-family: roc-grotesk, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background-color: black;
+}
+
+.backgroundvideo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* Ensure the video covers the container */
+}
+
+.videocontainer {
+  position: relative;
+}
