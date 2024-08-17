@@ -1,53 +1,57 @@
-import React from "react";
-import Box from "./Box.js";
-import colors from "../colors.js";
-import DemoImage from "./DemoImage.js";
+import React, { useState } from "react";
+
+import { useSpring, animated } from "@react-spring/web";
+import PaddedContent from "./PaddedContent.js";
+import ProjectContainer from "./ProjectContainer.js";
+
+const panels = [
+  <ProjectContainer>
+    <h2>Playlist Pursuit</h2>
+  </ProjectContainer>,
+  <ProjectContainer>
+    <h2>Manchot's First Flight</h2>
+  </ProjectContainer>,
+  <ProjectContainer>
+    <h2>Rogue Toolkit</h2>
+  </ProjectContainer>,
+];
 
 const Projects = () => {
-  return (
-    <div className="project-background">
-      <div className="project-container">
-        <Box
-          className="box-full-width"
-          backgroundColor={colors.lightblue}
-        ></Box>
-        <Box className="box-default" backgroundColor={colors.purple}>
-          <div className="box-title">Playlist Pursuit</div>
-          <div className="info">
-            <p>
-              Playlist Pursuit is a multiplayer game built with Flutter and
-              Firebase for iOS and Android. Players anonymously contribute to a
-              music queue and guess the tracks played, using the Spotify API to
-              enhance the experience.
-            </p>
-            <h3>Features</h3>
-            <ul>
-              <li>Multiplayer Gameplay: Play with friends or other users.</li>
-              <li>
-                Anonymous Play: Contribute to a music queue without revealing
-                your identity.
-              </li>
-              <li>Spotify Integration: Utilize Spotify’s music library.</li>
-              <li>Real-time Updates: Firebase for live game updates.</li>
-              <li>Cross-Platform: Available on iOS and Android.</li>
-            </ul>
-          </div>
-        </Box>
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-        <Box className="box-default" backgroundColor={colors.purple}>
-          <div className="info">
-            <h3>Product Media</h3>
-            <div className="demo-image-container">
-              <DemoImage url="https://github.com/billymike02/PlaylistPursuit/raw/main/demo_images/Simulator%20Screenshot%20-%20iPhone%2015%20-%202024-08-15%20at%2010.45.35.png" />
-              <DemoImage url="https://github.com/billymike02/PlaylistPursuit/raw/main/demo_images/Simulator%20Screenshot%20-%20iPhone%2015%20-%202024-08-15%20at%2010.46.05.png" />
-              <DemoImage url="https://github.com/billymike02/PlaylistPursuit/raw/main/demo_images/Simulator%20Screenshot%20-%20iPhone%2015%20-%202024-08-15%20at%2010.46.37.png" />
-              <DemoImage url="https://github.com/billymike02/PlaylistPursuit/raw/main/demo_images/Simulator%20Screenshot%20-%20iPhone%2015%20-%202024-08-15%20at%2010.47.06.png" />
-              <DemoImage url="https://github.com/billymike02/PlaylistPursuit/raw/main/demo_images/Simulator%20Screenshot%20-%20iPhone%2015%20-%202024-08-15%20at%2010.47.15.png" />
-            </div>
-          </div>
-        </Box>
+  // Animation properties
+  const props = useSpring({
+    opacity: 1,
+    transform: "scale(1)",
+    from: { opacity: 0, transform: "scale(0.9)" },
+    reset: true, // Reset animation on index change
+  });
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % panels.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + panels.length) % panels.length
+    );
+  };
+
+  return (
+    <PaddedContent backgroundColor="black">
+      <div className="project-nav">
+        <div className="nav-arrow" onClick={handlePrev}>
+          &#x2039;
+        </div>
+        <h3>Browse Projects</h3>
+        <div className="nav-arrow" onClick={handleNext}>
+          &#x203A;
+        </div>
       </div>
-    </div>
+      <animated.div style={props} className="coverflow-container">
+        {panels[currentIndex]}
+      </animated.div>
+    </PaddedContent>
   );
 };
 

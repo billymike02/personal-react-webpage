@@ -8,9 +8,14 @@ const Creative = () => {
   return (
     <div>
       <div class={styles.videocontainer}>
-        <div className={styles.heading}>
-          <h1>3D Career</h1>
-          <p>as if</p>
+        <div className={styles.headingcontainer}>
+          <div className={styles.headng}>
+            Creative Stuffs
+            <br />
+            <a style={{ fontSize: "30px", fontWeight: "normal" }}>
+              that's fun right.
+            </a>
+          </div>
         </div>
         <video
           src={backgroundVideo}

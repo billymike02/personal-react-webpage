@@ -1,16 +1,12 @@
 // src/components/Sidebar.js
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Sidebar.css";
-import sketchfabLogo from "../assets/images/sketchfab-logo-black.png"; // Update path as necessary
-import githubLogo from "../assets/images/github-logo-black.png";
-import linkedInLogo from "../assets/images/linked-in-logo-black.png";
 
 const Sidebar = () => {
   return (
     <nav className="sidebar">
       <ul>
-        <h3 className="name">Bill Woodward</h3>
+        <h1>Bill Woodward</h1>
         <li>
           <Link to="/about">About</Link>
         </li>
@@ -18,7 +14,7 @@ const Sidebar = () => {
           <Link to="/projects">Projects</Link>
         </li>
         <li>
-          <Link to="/creative">Creative</Link>
+          <Link to="/creative">Animation</Link>
         </li>
 
         <li>

@@ -5,6 +5,20 @@
   overflow: hidden; /* Ensure no overflow if needed */
 }
 
+.headingcontainer {
+  margin-left: 20px;
+  margin-top: 0; /* Ensure there's no top margin */
+  margin-bottom: 0; /* Ensure there's no bottom margin */
+  position: absolute;
+  color: white;
+  bottom: 5%; /* Keep this if you want the heading near the bottom */
+  font-family: roc-grotesk, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background-color: black;
+  font-size: 50px;
+}
+
 .heading {
   margin-left: 20px;
   margin-top: 0; /* Ensure there's no top margin */
@@ -16,6 +30,7 @@
   font-weight: 700;
   font-style: normal;
   background-color: black;
+  font-size: 24px;
 }
 
 .backgroundvideo {
