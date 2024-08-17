@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-
+import PlaylistPursuit from "./PlaylistPursuit.js";
 import { useSpring, animated } from "@react-spring/web";
 import PaddedContent from "./PaddedContent.js";
 import ProjectContainer from "./ProjectContainer.js";
 
 const panels = [
   <ProjectContainer>
-    <h2>Playlist Pursuit</h2>
+    <PlaylistPursuit></PlaylistPursuit>
   </ProjectContainer>,
   <ProjectContainer>
     <h2>Manchot's First Flight</h2>
@@ -38,7 +38,7 @@ const Projects = () => {
   };
 
   return (
-    <PaddedContent backgroundColor="black">
+    <PaddedContent backgroundColor="#DEDFE4">
       <div className="project-nav">
         <div className="nav-arrow" onClick={handlePrev}>
           &#x2039;

@@ -13,9 +13,9 @@ const Sidebar = () => {
         <li>
           <Link to="/projects">Projects</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/creative">Animation</Link>
-        </li>
+        </li> */}
 
         <li>
           <a
@@ -28,20 +28,20 @@ const Sidebar = () => {
         </li>
         <li>
           <a
-            href="https://sketchfab.com/a308"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Sketchfab
-          </a>
-        </li>
-        <li>
-          <a
             href="https://github.com/billymike02"
             target="_blank"
             rel="noopener noreferrer"
           >
             GitHub
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://sketchfab.com/a308"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Sketchfab
           </a>
         </li>
       </ul>
