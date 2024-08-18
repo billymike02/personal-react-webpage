@@ -22,7 +22,7 @@ const About = () => {
         <img className="portrait" src={portraitImage} />
       </div>
 
-      <h2>Who's this guy?</h2>
+      <h2>About Bill</h2>
       <p>
         I am a soon to be graduating Computer Science student with a background
         in <b>frontend development</b> and <b>graphics</b>.

@@ -29,8 +29,8 @@ h1 {
 }
 
 /* setting bg color for headings in project browser */
-.project-container h2,
-.project-container h3 {
+h2,
+h3 {
   display: block;
   font-weight: 500;
 }
@@ -55,15 +55,12 @@ p {
 /* src/components/Sidebar.css */
 .sidebar {
   margin: 3rem;
+  min-width: 40%;
   justify-items: center;
   align-items: center;
   display: flex;
   transition: all 0.3s;
   overflow: hidden;
-}
-
-.sidebar:hover {
-  margin-left: 3.4rem;
 }
 
 .sidebar h1,
@@ -73,10 +70,17 @@ a {
   color: rgb(51 51 51);
 }
 
+.sidebar h1:hover {
+  background-color: black;
+
+  scale: 1.01;
+}
+
 .sidebar h1 {
   background-color: rgb(51 51 51);
   color: rgb(235, 235, 235);
   font-weight: 500;
+  transition: all 0.5s;
 }
 
 .sidebar ul {
@@ -87,22 +91,26 @@ a {
 
 .sidebar a {
   text-decoration: none;
-  display: flex;
-  align-items: center;
+  display: inline-block;
   padding: 10px 10px;
   border-radius: 6px;
-  /* transition: background-color 0.3s; */
+  align-items: flex-start;
+  align-content: flex-start;
   margin: 10px 0px;
   font-family: "owners", sans-serif;
   font-size: 2rem;
   font-style: normal;
   transition: all 0.1s;
+  transform-origin: center;
+}
+
+.sidebar ul {
+  transform-origin: center;
 }
 
 .sidebar a:hover {
   text-shadow: 3px -3px 8px rgba(0, 0, 0, 0.268);
-  font-size: 2.1rem;
-  font-weight: 400;
+  transform: translate(-1%);
 }
 
 .sidebar a:hover,
@@ -112,7 +120,6 @@ a {
 }
 
 .bike-icon {
-  position: absolute;
   width: 400px;
   height: auto;
   visibility: hidden;
@@ -126,9 +133,9 @@ a {
 }
 
 .sidebar a:active {
-  font-size: 2.2rem;
+  /* font-size: 2.2rem; */
+  scale: 1.05;
   color: rgb(0, 94, 255);
-  /* font-wseight: 500; */
 }
 
 .nav-arrow:active {
@@ -149,12 +156,6 @@ a {
   font-style: normal;
 }
 
-.picture-container {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 5%;
-}
-
 .portrait {
   display: block;
   width: 60%;
@@ -172,6 +173,13 @@ a {
   width: 100vw;
   display: flex;
   flex: 1;
+  display: flex;
+  column-gap: 2rem;
+  flex-direction: row;
+  height: 100vh; /* Use 100% of the viewport height */
+  width: 100vw; /* Use 100% of the viewport width */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  overflow-y: hidden;
 }
 
 .project-container {
@@ -187,7 +195,8 @@ a {
 
 .project-container h2,
 .project-container h3,
-.project-container p {
+.project-container p,
+.project-container .horizontal-image-browser {
   margin: 3rem;
 }
 

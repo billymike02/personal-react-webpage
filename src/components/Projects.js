@@ -42,7 +42,9 @@ const Projects = () => {
         <div className="nav-arrow" onClick={handlePrev}>
           &#x2039; Prev
         </div>
-
+        <div>
+          {currentIndex + 1} / {panels.length}
+        </div>
         <div className="nav-arrow" onClick={handleNext}>
           Next &#x203A;
         </div>

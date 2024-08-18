@@ -1,0 +1,51 @@
+.horizontal-image-browser {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: 300px;
+}
+
+.horizontal-image-browser button {
+  height: 100%;
+  width: 5%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(51, 51, 51);
+  color: rgb(235, 235, 235);
+  font-size: 4rem;
+  border: none;
+  text-shadow: none;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.1s;
+  /* transform-origin: 100%; */
+}
+
+.horizontal-image-browser button:active {
+  background-color: black;
+  color: rgb(0, 140, 255);
+  scale: 1.15 1.01;
+}
+
+.horizontal-image-browser .image-container {
+  display: flex;
+  height: 100%;
+  object-fit: contain;
+  justify-content: space-around;
+  transition: all 0.1s;
+}
+
+.horizontal-image-browser .project-image {
+  height: 100%;
+  width: auto;
+  display: flex;
+  transition: all 0.3s;
+}
+
+.horizontal-image-browser .project-image:hover {
+  z-index: 5;
+  scale: 1.05;
+  border-radius: 5px;
+}
