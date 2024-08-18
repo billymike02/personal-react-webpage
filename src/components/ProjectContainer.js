@@ -1,9 +1,5 @@
 function ProjectContainer({ children }) {
-  return (
-    <div className="project-container">
-      <div className="project-content">{children}</div>
-    </div>
-  );
+  return <div>{children}</div>;
 }
 
 export default ProjectContainer;

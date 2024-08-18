@@ -2,7 +2,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
-import Home from "./components/3D";
+
 import About from "./components/About";
 import "./App.css";
 import Creative from "./components/3D";

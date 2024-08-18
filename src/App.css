@@ -5,6 +5,7 @@
   height: 100vh; /* Use 100% of the viewport height */
   width: 100vw; /* Use 100% of the viewport width */
   overflow-x: hidden; /* Prevent horizontal overflow */
+  overflow-y: hidden;
 }
 
 h1,
@@ -23,18 +24,46 @@ h1 {
   font-weight: 100;
   font-style: normal;
   margin: 0;
-  background-color: black;
+
   color: white;
+}
+
+/* setting bg color for headings in project browser */
+.project-container h2,
+.project-container h3 {
+  display: block;
+  font-weight: 500;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+h2,
+h3 {
+  /* font-weight: 500; */
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 1.3rem;
 }
 
 /* src/components/Sidebar.css */
 .sidebar {
   margin: 3rem;
-  margin-right: 0;
-  max-width: 36vw;
   justify-items: center;
   align-items: center;
   display: flex;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.sidebar:hover {
+  margin-left: 3.4rem;
 }
 
 .sidebar h1,
@@ -45,9 +74,9 @@ a {
 }
 
 .sidebar h1 {
-  text-shadow: 5px -3px 0px rgb(0, 0, 0);
   background-color: rgb(51 51 51);
-  color: white;
+  color: rgb(235, 235, 235);
+  font-weight: 500;
 }
 
 .sidebar ul {
@@ -65,15 +94,46 @@ a {
   /* transition: background-color 0.3s; */
   margin: 10px 0px;
   font-family: "owners", sans-serif;
-
   font-size: 2rem;
   font-style: normal;
+  transition: all 0.1s;
+}
+
+.sidebar a:hover {
+  text-shadow: 3px -3px 8px rgba(0, 0, 0, 0.268);
+  font-size: 2.1rem;
+  font-weight: 400;
 }
 
 .sidebar a:hover,
 .nav-arrow:hover,
 .resume-button:hover {
   color: rgba(0, 145, 255, 0.767);
+}
+
+.bike-icon {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  visibility: hidden;
+  fill: rgba(113, 130, 142, 0.624);
+  z-index: -1;
+}
+
+.nav-arrow {
+  transition: all 0.1s;
+  transform-origin: center;
+}
+
+.sidebar a:active {
+  font-size: 2.2rem;
+  color: rgb(0, 94, 255);
+  /* font-wseight: 500; */
+}
+
+.nav-arrow:active {
+  color: rgb(0, 94, 255);
+  transform: scale(1.5, 1.2);
 }
 
 .interest-cloud {
@@ -103,8 +163,7 @@ a {
 }
 
 .padded-content,
-.project-container,
-.coverflow-container {
+.project-container {
   display: flex;
   flex: 1;
 }
@@ -115,38 +174,52 @@ a {
   flex: 1;
 }
 
-.project-container,
-.coverflow-container {
+.project-container {
   height: 91%;
   background-color: rgb(235, 235, 235);
   flex-direction: column;
-}
-
-.project-container h2 {
-  margin: 3rem;
-  margin-bottom: 1rem;
-  color: rgb(235 235 235);
-  background-color: rgb(51 51 51);
-  padding: 3px;
-  padding-inline: 1rem;
+  width: 100%;
+  color: rgb(51 51 51);
   display: inline-block;
+  transition: scale 0.3s, box-shadow 0.3s;
+  display: flex;
 }
 
+.project-container h2,
 .project-container h3,
 .project-container p {
-  margin: 1rem;
-  margin-left: 3rem;
+  margin: 3rem;
+}
+
+.project-heading {
+  display: flex;
+  background-color: rgb(51, 51, 51);
+  color: rgb(235, 235, 235);
+  height: 24%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-heading h2,
+.project-heading h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-container:hover {
+  scale: 1.03;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
 }
 
 .project-nav {
   margin-bottom: 1%;
   color: rgb(235, 235, 235);
-  height: 8%;
   display: flex;
+  height: 6vh;
   justify-content: space-between;
   align-items: center;
   padding-inline: 5%;
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .project-nav h3 {
@@ -160,11 +233,17 @@ a {
   color: white;
   background-color: rgb(51 51 51);
   padding: 0.8rem;
-  font-weight: 300;
+  font-weight: 500;
+  font-size: 1.1rem;
   justify-content: center;
   text-transform: uppercase;
   width: 30%;
   right: 0;
+  transition: all 0.1s;
+}
+
+.resume-button:active {
+  scale: 1.1 1.05;
 }
 
 /* this is for div's that are buttons */

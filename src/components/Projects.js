@@ -5,9 +5,7 @@ import PaddedContent from "./PaddedContent.js";
 import ProjectContainer from "./ProjectContainer.js";
 
 const panels = [
-  <ProjectContainer>
-    <PlaylistPursuit></PlaylistPursuit>
-  </ProjectContainer>,
+  <PlaylistPursuit></PlaylistPursuit>,
   <ProjectContainer>
     <h2>Manchot's First Flight</h2>
   </ProjectContainer>,
@@ -23,7 +21,8 @@ const Projects = () => {
   const props = useSpring({
     opacity: 1,
     transform: "scale(1)",
-    from: { opacity: 0, transform: "scale(0.9)" },
+
+    from: { opacity: 1, transform: "scale(0.9)" },
     reset: true, // Reset animation on index change
   });
 
@@ -41,14 +40,14 @@ const Projects = () => {
     <PaddedContent backgroundColor="#DEDFE4">
       <div className="project-nav">
         <div className="nav-arrow" onClick={handlePrev}>
-          &#x2039;
+          &#x2039; Prev
         </div>
-        <h3>Browse Projects</h3>
+
         <div className="nav-arrow" onClick={handleNext}>
-          &#x203A;
+          Next &#x203A;
         </div>
       </div>
-      <animated.div style={props} className="coverflow-container">
+      <animated.div style={props} className="project-container">
         {panels[currentIndex]}
       </animated.div>
     </PaddedContent>

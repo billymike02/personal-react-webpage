@@ -1,7 +1,5 @@
 import React from "react";
-import Box from "./Box.js";
 import portraitImage from "../assets/images/portrait-surf.JPG";
-import colors from "../colors.js";
 import PaddedContent from "./PaddedContent.js";
 import resume from "../assets/files/resume.pdf";
 
