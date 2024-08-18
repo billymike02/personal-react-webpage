@@ -6,6 +6,7 @@
   width: 100vw; /* Use 100% of the viewport width */
   overflow-x: hidden; /* Prevent horizontal overflow */
   overflow-y: hidden;
+  position: relative;
 }
 
 h1,
@@ -55,7 +56,6 @@ p {
 /* src/components/Sidebar.css */
 .sidebar {
   margin: 3rem;
-  min-width: 40%;
   justify-items: center;
   align-items: center;
   display: flex;
@@ -70,9 +70,12 @@ a {
   color: rgb(51 51 51);
 }
 
+.sidebar h1 {
+  transition: all 0.7s;
+}
+
 .sidebar h1:hover {
   background-color: black;
-
   scale: 1.01;
 }
 
@@ -80,7 +83,6 @@ a {
   background-color: rgb(51 51 51);
   color: rgb(235, 235, 235);
   font-weight: 500;
-  transition: all 0.5s;
 }
 
 .sidebar ul {
@@ -170,14 +172,12 @@ a {
 }
 
 .padded-content {
-  width: 100vw;
   display: flex;
   flex: 1;
   display: flex;
   column-gap: 2rem;
   flex-direction: row;
-  height: 100vh; /* Use 100% of the viewport height */
-  width: 100vw; /* Use 100% of the viewport width */
+  width: 10px;
   overflow-x: hidden; /* Prevent horizontal overflow */
   overflow-y: hidden;
 }
@@ -308,4 +308,22 @@ a {
   width: 300px;
   height: 50px;
   background-color: black;
+}
+
+.modal {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 1000; /* Ensure the modal is on top */
+}
+
+.modal.show {
+  opacity: 1;
 }

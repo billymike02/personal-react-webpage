@@ -2,6 +2,9 @@ import React from "react";
 import portraitImage from "../assets/images/portrait-surf.JPG";
 import PaddedContent from "./PaddedContent.js";
 import resume from "../assets/files/resume.pdf";
+import ModalContent from "./PortalComponent.js";
+import { createPortal } from "react-dom";
+import { useState } from "react";
 
 const About = () => {
   const handleDownload = () => {

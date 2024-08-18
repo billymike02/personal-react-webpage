@@ -34,7 +34,7 @@
   height: 100%;
   object-fit: contain;
   justify-content: space-around;
-  transition: all 0.1s;
+  transition: background-color 0.5s;
 }
 
 .horizontal-image-browser .project-image {
@@ -48,4 +48,16 @@
   z-index: 5;
   scale: 1.05;
   border-radius: 5px;
+  user-select: none;
 }
+/* 
+.horizontal-image-browser .image-container:active {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 500;
+  background-color: rgba(0, 0, 0, 0.8);
+} */
