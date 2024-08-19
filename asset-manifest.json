@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/personal-webpage/static/css/main.099b2372.css",
-    "main.js": "/personal-webpage/static/js/main.5270367c.js",
-    "static/js/453.8f11a781.chunk.js": "/personal-webpage/static/js/453.8f11a781.chunk.js",
-    "static/media/resume.pdf": "/personal-webpage/static/media/resume.814b2c57a3c4651ea1bf.pdf",
-    "static/media/portrait-surf.jpeg": "/personal-webpage/static/media/portrait-surf.74aabe40ca4365733ea9.jpeg",
-    "index.html": "/personal-webpage/index.html",
-    "main.099b2372.css.map": "/personal-webpage/static/css/main.099b2372.css.map",
-    "main.5270367c.js.map": "/personal-webpage/static/js/main.5270367c.js.map",
-    "453.8f11a781.chunk.js.map": "/personal-webpage/static/js/453.8f11a781.chunk.js.map"
+    "main.css": "/personal-react-webpage/static/css/main.099b2372.css",
+    "main.js": "/personal-react-webpage/static/js/main.bf5b2184.js",
+    "static/js/453.8f11a781.chunk.js": "/personal-react-webpage/static/js/453.8f11a781.chunk.js",
+    "static/media/resume.pdf": "/personal-react-webpage/static/media/resume.814b2c57a3c4651ea1bf.pdf",
+    "static/media/portrait-surf.jpeg": "/personal-react-webpage/static/media/portrait-surf.74aabe40ca4365733ea9.jpeg",
+    "index.html": "/personal-react-webpage/index.html",
+    "main.099b2372.css.map": "/personal-react-webpage/static/css/main.099b2372.css.map",
+    "main.bf5b2184.js.map": "/personal-react-webpage/static/js/main.bf5b2184.js.map",
+    "453.8f11a781.chunk.js.map": "/personal-react-webpage/static/js/453.8f11a781.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.099b2372.css",
-    "static/js/main.5270367c.js"
+    "static/js/main.bf5b2184.js"
   ]
 }
