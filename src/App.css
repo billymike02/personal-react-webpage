@@ -135,6 +135,8 @@ a {
 .nav-arrow {
   transition: all 0.1s;
   transform-origin: center;
+  text-transform: uppercase;
+  word-spacing: 1.2rem;
 }
 
 .sidebar a:active {
