@@ -48,7 +48,7 @@ const Sidebar = () => {
             </a>
           </li> */}
         </ul>
-        <MyIcon className="bike-icon" />
+        {/* <MyIcon className="bike-icon" /> */}
       </nav>
     </>
   );
