@@ -1,12 +1,8 @@
 .App {
   display: flex;
-  column-gap: 2rem;
   flex-direction: row;
   height: 100vh; /* Use 100% of the viewport height */
   width: 100vw; /* Use 100% of the viewport width */
-  overflow-x: hidden; /* Prevent horizontal overflow */
-  overflow-y: hidden;
-  position: relative;
 }
 
 h1,
@@ -60,17 +56,17 @@ p {
 
 /* src/components/Sidebar.css */
 .sidebar {
-  width: 40%;
-  margin: 3rem;
   justify-items: center;
   align-items: center;
   display: flex;
   transition: all 0.3s;
   overflow: hidden;
+  min-width: 40%;
 }
 
 .sidebar h1,
 a {
+  margin-left: 2rem;
   font-weight: 100;
   text-transform: uppercase;
   color: rgb(51 51 51);
@@ -93,8 +89,6 @@ a {
 
 .sidebar ul {
   list-style-type: none;
-  padding: 8px;
-  margin: 2px;
 }
 
 .sidebar a {
@@ -104,7 +98,7 @@ a {
   border-radius: 6px;
   align-items: flex-start;
   align-content: flex-start;
-  margin: 10px 0px;
+
   font-family: "owners", sans-serif;
   font-size: 2rem;
   font-style: normal;
@@ -176,15 +170,12 @@ a {
 .padded-content,
 .project-container {
   display: flex;
-  flex: 1;
+  width: 100%;
 }
 
 .padded-content {
-  column-gap: 2rem;
   flex-direction: row;
-  overflow-x: hidden; /* Prevent horizontal overflow */
-  /* overflow-y: hidden; */
-  /* margin-bottom: 3rem; */
+  overflow-x: hidden;
 }
 
 strong {
