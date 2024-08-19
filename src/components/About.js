@@ -1,5 +1,5 @@
 import React from "react";
-import portraitImage from "../assets/images/portrait-surf.JPG";
+import portraitImage from "../assets/images/portrait-surf.jpeg";
 import PaddedContent from "./PaddedContent.js";
 import resume from "../assets/files/resume.pdf";
 import ModalContent from "./PortalComponent.js";

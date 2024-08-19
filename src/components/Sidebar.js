@@ -1,7 +1,6 @@
 // src/components/Sidebar.js
 import React from "react";
 import { Link } from "react-router-dom";
-import { ReactComponent as MyIcon } from "../assets/images/bike.svg";
 
 const Sidebar = () => {
   return (
@@ -22,7 +21,7 @@ const Sidebar = () => {
 
           <li>
             <a
-              href="https://linkedin.com/wmwoodward2002"
+              href="https://www.linkedin.com/in/wmwoodward2002/"
               target="_blank"
               rel="noopener noreferrer"
             >
