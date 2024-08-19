@@ -89,27 +89,22 @@ const PlaylistPursuit = () => {
         <div className="project-media">
           <ViewableImage
             src="https://github.com/billymike02/PlaylistPursuit/raw/main/demo_images/Simulator%20Screenshot%20-%20iPhone%2015%20-%202024-08-15%20at%2010.45.35.png"
-            maxWidth="90%"
             className="image-container"
           />
           <ViewableImage
             src="https://github.com/billymike02/PlaylistPursuit/raw/main/demo_images/Simulator%20Screenshot%20-%20iPhone%2015%20-%202024-08-15%20at%2010.46.05.png"
-            maxWidth="90%"
             className="image-container"
           />
           <ViewableImage
             src="https://github.com/billymike02/PlaylistPursuit/raw/main/demo_images/Simulator%20Screenshot%20-%20iPhone%2015%20-%202024-08-15%20at%2010.46.37.png"
-            maxWidth="90%"
             className="image-container"
           />
           <ViewableImage
             src="https://github.com/billymike02/PlaylistPursuit/raw/main/demo_images/Simulator%20Screenshot%20-%20iPhone%2015%20-%202024-08-15%20at%2010.47.06.png"
-            maxWidth="90%"
             className="image-container"
           />
           <ViewableImage
             src="https://github.com/billymike02/PlaylistPursuit/raw/main/demo_images/Simulator%20Screenshot%20-%20iPhone%2015%20-%202024-08-15%20at%2010.47.15.png"
-            maxWidth="90%"
             className="image-container"
           />
         </div>

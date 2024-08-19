@@ -346,11 +346,6 @@ strong {
   cursor: pointer;
 }
 
-.project-media .image-container {
-  padding-block: 1rem;
-  padding-inline: 2rem;
-}
-
 .project-info {
   display: flex;
   flex-direction: column;
@@ -364,8 +359,7 @@ strong {
   flex-direction: column;
 
   align-items: center;
-  overflow-y: hidden;
-  overflow-x: hidden;
+
   transition: all 0.5s;
 }
 
@@ -379,18 +373,20 @@ strong {
   margin-top: auto;
   background-color: rgb(51 51 51);
   color: rgb(235, 235, 235);
+  transition: all 0.5s;
 }
 
 .project-footer h2,
 .project-footer h3,
 .project-footer p {
   margin: 3rem;
-  transition: all 0.5s;
 }
 
-.project-footer h2:hover {
-  color: rgb(0, 119, 255);
-  scale: 1.1;
+.project-footer:hover {
+  color: rgb(255, 255, 255);
+  background-color: black;
+  scale: 1.02;
+  border-radius: 0.5rem;
 }
 
 .project-footer:hover {
