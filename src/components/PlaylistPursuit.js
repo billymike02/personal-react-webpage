@@ -20,65 +20,91 @@ const PlaylistPursuit = () => {
         <div className="project-info">
           <h3>Description</h3>
           <p>
-            Playlist Pursuit is a dynamic music trivia game that combines the
-            thrill of music discovery with the fun of friendly competition. In
-            this app, you and your friends connect via Spotify to anonymously
-            queue songs in a shared playlist. The objective is simple: earn
-            points by guessing which friend added each song to the queue.
+            "Playlist Pursuit" is an engaging music trivia game designed to
+            enhance social interaction through music. Players connect via
+            Spotify to anonymously queue songs in a shared playlist. The goal is
+            to guess which friend added each song, earning points for correct
+            guesses. This app combines the excitement of music discovery with
+            friendly competition, making it a unique addition to any music
+            lover's repertoire.
           </p>
           <h3>Features:</h3>
           <ul>
             <li>
-              <strong>Anonymous Song Queuing:</strong> Add songs to a shared
-              playlist without revealing your identity. Create a diverse and
-              intriguing mix of music.
+              <strong>Anonymous Song Queuing:</strong> Allows players to add
+              songs to a shared playlist without revealing their identity,
+              creating an intriguing and diverse music experience.
             </li>
             <li>
-              <strong>Guessing Game:</strong> Test your knowledge of your
-              friends' musical tastes by guessing who queued each song. The more
-              accurate your guesses, the more points you earn.
+              <strong>Guessing Game Mechanics:</strong> Players guess which
+              friend added each song, with accurate guesses earning points and
+              adding a competitive edge to the game.
             </li>
             <li>
-              <strong>Live Leaderboard:</strong> Track your progress and see how
-              you stack up against your friends in real-time with a live
-              leaderboard.
+              <strong>Live Leaderboard:</strong> Real-time tracking of player
+              progress and rankings, enhancing the competitive aspect of the
+              game.
             </li>
             <li>
-              <strong>Spotify Integration:</strong> Seamlessly integrate with
-              Spotify to access your favorite tracks and discover new ones while
-              playing.
+              <strong>Spotify Integration:</strong> Seamlessly integrates with
+              Spotify to access a wide range of tracks, enhancing the gameplay
+              experience with familiar music.
             </li>
           </ul>
           <h3>Technical Details:</h3>
           <ul>
             <li>
-              <strong>Platform:</strong> Available on iOS and Android.
+              <strong>Platform:</strong> Developed for both iOS and Android,
+              ensuring broad accessibility.
             </li>
             <li>
-              <strong>Technology:</strong> Built with Flutter for a smooth
-              cross-platform experience, Firebase for real-time data
-              synchronization, and the Spotify API for music integration.
+              <strong>Technology:</strong> Built with Flutter for cross-platform
+              compatibility, Firebase for real-time data synchronization, and
+              the Spotify API for music integration.
             </li>
             <li>
-              <strong>Game Mechanics:</strong> Utilizes asynchronous operations
-              to manage playlist updates and guessing rounds efficiently.
+              <strong>Backend and Real-Time Features:</strong> Utilizes Firebase
+              for handling asynchronous operations, managing playlist updates,
+              and supporting real-time interactions.
             </li>
           </ul>
           <p>
-            Playlist Pursuit turns your music library into a competitive
-            playground, making it the perfect app for music lovers looking to
-            add a fun twist to their listening experience.
+            "Playlist Pursuit" transforms your music experience into a
+            competitive and interactive game. By leveraging modern technologies
+            and integrating with Spotify, it provides a fun and engaging
+            platform for friends to connect through music.
           </p>
           <h3>Contributions</h3>
           <p>
-            I designed and developed every aspect of Playlist Pursuit. From the
-            initial concept and user experience design to the technical
-            implementation, I handled it all. This includes integrating
-            Spotify’s API, building the real-time features with Firebase, and
-            creating a seamless cross-platform experience using Flutter. My role
-            encompassed not only coding but also project management, ensuring
-            that the app met all functional requirements and delivered an
-            engaging user experience.
+            Initially starting with a specific role, I eventually took on full
+            responsibility for "Playlist Pursuit." My contributions spanned the
+            entire project lifecycle, including:
+          </p>
+          <ul>
+            <li>
+              <strong>Initial Design:</strong> Created Figma mockups to define
+              the app’s user interface and user experience.
+            </li>
+            <li>
+              <strong>Frontend Development:</strong> Developed the user
+              interface using Flutter, ensuring a seamless and intuitive
+              experience across iOS and Android platforms.
+            </li>
+            <li>
+              <strong>Backend Development:</strong> Implemented real-time
+              features and data synchronization using Firebase, and integrated
+              with the Spotify API for music functionality.
+            </li>
+            <li>
+              <strong>Project Management:</strong> Oversaw the project from
+              concept to completion, managing development, testing, and
+              deployment phases to ensure a high-quality final product.
+            </li>
+          </ul>
+          <p>
+            This project showcases my ability to manage and execute all aspects
+            of software development, from initial design to final deployment,
+            demonstrating my comprehensive skills in full-stack development.
           </p>
         </div>
 

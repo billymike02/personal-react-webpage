@@ -277,6 +277,7 @@ strong {
 .project-nav {
   background-color: rgb(51 51 51);
   transition: all 0.1s;
+  transform-origin: center bottom;
 }
 
 .demo-image-container {
@@ -392,8 +393,6 @@ strong {
 .project-footer:hover {
   color: rgb(255, 255, 255);
   background-color: black;
-  scale: 1.02;
-  border-radius: 0.5rem;
 }
 
 .project-footer:hover {
@@ -407,4 +406,8 @@ strong {
 
 .manchot {
   background-color: rgb(44 103 144);
+}
+
+.rogue-toolkit {
+  background-color: rgb(120, 0, 0);
 }

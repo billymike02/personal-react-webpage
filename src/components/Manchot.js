@@ -13,72 +13,76 @@ const Manchot = () => {
   return (
     <>
       <div className="project-heading manchot">
-        <h2>Manchot's First Flight</h2>
+        <h2>3D Game Engine + Demo</h2>
         <h3>Project Timeline: Apr. 2024-June. 2024</h3>
       </div>
       <div className="project-body">
         <div className="project-info">
           <h3>Description</h3>
           <p>
-            Playlist Pursuit is a dynamic music trivia game that combines the
-            thrill of music discovery with the fun of friendly competition. In
-            this app, you and your friends connect via Spotify to anonymously
-            queue songs in a shared playlist. The objective is simple: earn
-            points by guessing which friend added each song to the queue.
+            "Manchot's First Flight" is an innovative game developed using a
+            custom game engine, featuring a fictional French penguin on a quest
+            to gather food for a picnic with his girlfriend. The game combines
+            engaging exploration and puzzle-solving in a whimsically designed
+            winter environment, showcasing a unique art style and interactive
+            gameplay.
           </p>
           <h3>Features:</h3>
           <ul>
             <li>
-              <strong>Anonymous Song Queuing:</strong> Add songs to a shared
-              playlist without revealing your identity. Create a diverse and
-              intriguing mix of music.
+              <strong>Custom Game Engine:</strong> Developed with a custom
+              engine using C++, OpenGL, Assimp, and GLFW. This allowed for a
+              highly optimized and tailored gaming experience.
             </li>
             <li>
-              <strong>Guessing Game:</strong> Test your knowledge of your
-              friends' musical tastes by guessing who queued each song. The more
-              accurate your guesses, the more points you earn.
+              <strong>Asset Creation:</strong> Designed and created unique
+              visual assets to enhance the game's aesthetic and gameplay
+              experience.
             </li>
             <li>
-              <strong>Live Leaderboard:</strong> Track your progress and see how
-              you stack up against your friends in real-time with a live
-              leaderboard.
+              <strong>Interactive Gameplay:</strong> Includes diverse puzzles
+              and exploration elements that challenge players and contribute to
+              a rewarding experience.
             </li>
             <li>
-              <strong>Spotify Integration:</strong> Seamlessly integrate with
-              Spotify to access your favorite tracks and discover new ones while
-              playing.
+              <strong>Collaborative Development:</strong> Worked as part of a
+              7-person team, demonstrating strong teamwork and communication
+              skills in delivering a cohesive final product.
             </li>
           </ul>
           <h3>Technical Details:</h3>
           <ul>
             <li>
-              <strong>Platform:</strong> Available on iOS and Android.
+              <strong>Platform:</strong> Custom-developed game engine with
+              cross-platform capabilities.
             </li>
             <li>
-              <strong>Technology:</strong> Built with Flutter for a smooth
-              cross-platform experience, Firebase for real-time data
-              synchronization, and the Spotify API for music integration.
+              <strong>Technology:</strong> Utilized C++ for core development,
+              OpenGL for graphics rendering, Assimp for asset management, and
+              GLFW for window and input handling.
             </li>
             <li>
-              <strong>Game Mechanics:</strong> Utilizes asynchronous operations
-              to manage playlist updates and guessing rounds efficiently.
+              <strong>Development Contributions:</strong> Contributed to both
+              asset creation and frontend development. Responsible for designing
+              and integrating game assets and implementing key frontend
+              features.
             </li>
           </ul>
           <p>
-            Playlist Pursuit turns your music library into a competitive
-            playground, making it the perfect app for music lovers looking to
-            add a fun twist to their listening experience.
+            "Manchot's First Flight" demonstrates a comprehensive application of
+            game development principles, from custom engine creation to detailed
+            asset design. This project highlights my ability to manage and
+            contribute to complex, collaborative projects, making it a strong
+            example of my full-stack development capabilities.
           </p>
           <h3>Contributions</h3>
           <p>
-            I designed and developed every aspect of Playlist Pursuit. From the
-            initial concept and user experience design to the technical
-            implementation, I handled it all. This includes integrating
-            Spotify’s API, building the real-time features with Firebase, and
-            creating a seamless cross-platform experience using Flutter. My role
-            encompassed not only coding but also project management, ensuring
-            that the app met all functional requirements and delivered an
-            engaging user experience.
+            As a key contributor to "Manchot's First Flight," I was responsible
+            for designing and creating game assets, as well as handling frontend
+            development tasks. My role included collaborating with a team of 7
+            to develop the custom game engine, implement interactive features,
+            and ensure a cohesive gameplay experience. This project showcases my
+            skills in both technical development and effective teamwork.
           </p>
         </div>
 

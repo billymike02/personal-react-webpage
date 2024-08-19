@@ -4,13 +4,12 @@ import Manchot from "./Manchot.js";
 import { useSpring, animated } from "@react-spring/web";
 import PaddedContent from "./PaddedContent.js";
 import ProjectContainer from "./ProjectContainer.js";
+import RogueToolkit from "./RogueToolkit.js";
 
 const panels = [
   <PlaylistPursuit></PlaylistPursuit>,
   <Manchot></Manchot>,
-  <ProjectContainer>
-    <h2>Rogue Toolkit</h2>
-  </ProjectContainer>,
+  <RogueToolkit></RogueToolkit>,
 ];
 
 const Projects = () => {
