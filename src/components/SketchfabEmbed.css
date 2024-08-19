@@ -1,7 +1,0 @@
-.sketchfab-embed {
-  flex: 1 1 calc(50% - 16px); /* Two items per row with a gap adjustment */
-  /* Adjust as needed */
-  height: 300px;
-  box-sizing: border-box;
-  border-radius: 16px;
-}

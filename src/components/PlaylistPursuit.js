@@ -1,8 +1,5 @@
 import React from "react";
-import HorizontalImageBrowser from "./HorizontalImageBrowser";
-import { useState } from "react";
-import { createPortal } from "react-dom";
-import PortalComponent from "./PortalComponent.js";
+
 import ViewableImage from "./ViewableImage.js";
 
 const PlaylistPursuit = () => {
