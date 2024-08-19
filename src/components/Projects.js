@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import PlaylistPursuit from "./PlaylistPursuit.js";
+import Manchot from "./Manchot.js";
 import { useSpring, animated } from "@react-spring/web";
 import PaddedContent from "./PaddedContent.js";
 import ProjectContainer from "./ProjectContainer.js";
 
 const panels = [
   <PlaylistPursuit></PlaylistPursuit>,
-  <ProjectContainer>
-    <h2>Manchot's First Flight</h2>
-  </ProjectContainer>,
+  <Manchot></Manchot>,
   <ProjectContainer>
     <h2>Rogue Toolkit</h2>
   </ProjectContainer>,

@@ -111,15 +111,17 @@ a {
 }
 
 .sidebar a:hover {
-  text-shadow: 3px -3px 8px rgba(0, 0, 0, 0.268);
-
   scale: 1.03;
 }
 
 .sidebar a:hover,
-.nav-arrow:hover,
-.resume-button:hover {
+.nav-arrow:hover {
   color: rgba(0, 145, 255, 0.767);
+}
+
+.resume-button:hover {
+  background-color: black;
+  border-radius: 0.5rem;
 }
 
 .bike-icon {
@@ -138,12 +140,13 @@ a {
 .sidebar a:active {
   /* font-size: 2.2rem; */
   scale: 1.05;
+  text-shadow: 3px -3px 8px rgba(0, 0, 0, 0.268);
   color: rgb(0, 94, 255);
 }
 
 .nav-arrow:active {
   color: rgb(0, 94, 255);
-  transform: scale(1.5, 1.2);
+  transform: scale(1.2, 1.07);
 }
 
 .interest-cloud {
@@ -189,6 +192,7 @@ strong {
   color: rgb(51, 51, 51);
   display: flex;
   transition: scale 0.3s, box-shadow 0.3s;
+  transform-origin: center top;
 }
 
 .project-body {
@@ -216,8 +220,8 @@ strong {
 .project-heading h2,
 .project-heading h3 {
   margin: 3rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .project-container:hover {
@@ -257,7 +261,8 @@ strong {
 }
 
 .resume-button:active {
-  scale: 1.1 1.05;
+  scale: 1.05 1.02;
+  color: rgb(0, 140, 255);
 }
 
 /* this is for div's that are buttons */
@@ -269,6 +274,7 @@ strong {
 
 .project-nav {
   background-color: rgb(51 51 51);
+  transition: all 0.1s;
 }
 
 .demo-image-container {
@@ -354,11 +360,10 @@ strong {
 
 .project-media {
   display: flex;
-  border-left: 0.05rem solid rgb(51, 51, 51);
   color: rgb(235, 235, 235);
   flex-direction: column;
-
   align-items: center;
+  justify-content: space-evenly;
 
   transition: all 0.5s;
 }
@@ -392,4 +397,12 @@ strong {
 .project-footer:hover {
   user-select: none;
   cursor: pointer;
+}
+
+.playlist-pursuit {
+  background-color: rgb(120 21 222);
+}
+
+.manchot {
+  background-color: rgb(44 103 144);
 }

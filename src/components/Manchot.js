@@ -1,10 +1,10 @@
 import React from "react";
 import ViewableImage from "./ViewableImage.js";
 
-const PlaylistPursuit = () => {
+const Manchot = () => {
   const handleClick = () => {
     window.open(
-      "https://github.com/billymike02/PlaylistPursuit?tab=readme-ov-file",
+      "https://html-preview.github.io/?url=https://github.com/RandallCaler/CSC400/blob/main/webpage/index.html",
       "_blank",
       "noopener,noreferrer"
     );
@@ -12,9 +12,9 @@ const PlaylistPursuit = () => {
 
   return (
     <>
-      <div className="project-heading playlist-pursuit">
-        <h2>Playlist Pursuit</h2>
-        <h3>Project Timeline: Jan. 2024-Aug. 2024</h3>
+      <div className="project-heading manchot">
+        <h2>Manchot's First Flight</h2>
+        <h3>Project Timeline: Apr. 2024-June. 2024</h3>
       </div>
       <div className="project-body">
         <div className="project-info">
@@ -84,23 +84,15 @@ const PlaylistPursuit = () => {
 
         <div className="project-media">
           <ViewableImage
-            src="https://github.com/billymike02/PlaylistPursuit/raw/main/demo_images/Simulator%20Screenshot%20-%20iPhone%2015%20-%202024-08-15%20at%2010.45.35.png"
+            src="https://raw.githubusercontent.com/RandallCaler/CSC400/main/webpage/leveleditor1.png"
             className="image-container"
           />
           <ViewableImage
-            src="https://github.com/billymike02/PlaylistPursuit/raw/main/demo_images/Simulator%20Screenshot%20-%20iPhone%2015%20-%202024-08-15%20at%2010.46.05.png"
+            src="https://raw.githubusercontent.com/RandallCaler/CSC400/main/webpage/leveleditor2.png"
             className="image-container"
           />
           <ViewableImage
-            src="https://github.com/billymike02/PlaylistPursuit/raw/main/demo_images/Simulator%20Screenshot%20-%20iPhone%2015%20-%202024-08-15%20at%2010.46.37.png"
-            className="image-container"
-          />
-          <ViewableImage
-            src="https://github.com/billymike02/PlaylistPursuit/raw/main/demo_images/Simulator%20Screenshot%20-%20iPhone%2015%20-%202024-08-15%20at%2010.47.06.png"
-            className="image-container"
-          />
-          <ViewableImage
-            src="https://github.com/billymike02/PlaylistPursuit/raw/main/demo_images/Simulator%20Screenshot%20-%20iPhone%2015%20-%202024-08-15%20at%2010.47.15.png"
+            src="https://github.com/RandallCaler/CSC400/blob/main/webpage/banner.png?raw=true"
             className="image-container"
           />
         </div>
@@ -111,4 +103,4 @@ const PlaylistPursuit = () => {
     </>
   );
 };
-export default PlaylistPursuit;
+export default Manchot;

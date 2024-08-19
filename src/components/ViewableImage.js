@@ -19,7 +19,13 @@ const ViewableImage = ({ src, maxWidth, maxHeight }) => {
       {showModal &&
         createPortal(
           <PortalComponent show={showModal} onClose={() => setShowModal(false)}>
-            <img className="responsive-image" src={src} />
+            <div
+              className="image-container"
+              style={{ maxWidth, maxHeight }}
+              onClick={() => setShowModal(true)}
+            >
+              <img className="responsive-image" src={src} />
+            </div>
           </PortalComponent>,
           document.body
         )}
