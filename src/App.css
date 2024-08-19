@@ -53,8 +53,14 @@ p {
   font-size: 1.3rem;
 }
 
+.project-body li {
+  padding: 0.5rem;
+  font-size: 1.3rem;
+}
+
 /* src/components/Sidebar.css */
 .sidebar {
+  width: 40%;
   margin: 3rem;
   justify-items: center;
   align-items: center;
@@ -112,7 +118,8 @@ a {
 
 .sidebar a:hover {
   text-shadow: 3px -3px 8px rgba(0, 0, 0, 0.268);
-  transform: translate(-1%);
+
+  scale: 1.03;
 }
 
 .sidebar a:hover,
@@ -152,7 +159,7 @@ a {
 .content-body {
   margin: 3rem;
   flex: 1;
-  padding: 8px;
+
   font-family: "owners", sans-serif;
   font-weight: 100;
   font-style: normal;
@@ -173,32 +180,36 @@ a {
 }
 
 .padded-content {
-  display: flex;
-  flex: 1;
-  display: flex;
   column-gap: 2rem;
   flex-direction: row;
-  width: 10px;
   overflow-x: hidden; /* Prevent horizontal overflow */
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
+  /* margin-bottom: 3rem; */
+}
+
+strong {
+  font-weight: 500;
 }
 
 .project-container {
-  height: 91%;
   background-color: rgb(235, 235, 235);
   flex-direction: column;
   width: 100%;
-  color: rgb(51 51 51);
-  display: inline-block;
-  transition: scale 0.3s, box-shadow 0.3s;
+  color: rgb(51, 51, 51);
   display: flex;
+  transition: scale 0.3s, box-shadow 0.3s;
 }
 
-.project-container h2,
-.project-container h3,
-.project-container p,
-.project-container .horizontal-image-browser {
-  margin: 3rem;
+.project-body {
+  display: flex;
+  height: 100%;
+}
+
+.project-container .project-image {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  scale: 0.8;
 }
 
 .project-heading {
@@ -213,6 +224,7 @@ a {
 
 .project-heading h2,
 .project-heading h3 {
+  margin: 3rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -264,24 +276,8 @@ a {
   cursor: pointer;
 }
 
-.project-content {
-  display: flex;
-  width: 100%;
-  flex: 9;
-}
-
-.project-links,
 .project-nav {
   background-color: rgb(51 51 51);
-}
-
-.project-links {
-  display: flex;
-  flex: 1;
-
-  color: white;
-  width: 100%;
-  height: 20%;
 }
 
 .demo-image-container {
@@ -320,7 +316,7 @@ a {
   left: 0px;
   background: white;
   background-color: rgba(82, 82, 82, 0.345);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(8px);
   z-index: 1000; /* Ensure it is on top of other content */
   transition: all 0.5s;
   opacity: 0;
@@ -332,7 +328,7 @@ a {
   opacity: 1;
 }
 
-.modal .project-image {
+.modal .responsive-image {
   display: flex;
   transform-origin: center;
   scale: 0.9;
@@ -341,4 +337,72 @@ a {
 
 .modal .project-image:hover {
   scale: 0.92;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+}
+
+.responsive-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto; /* Maintain aspect ratio */
+  height: auto; /* Maintain aspect ratio */
+  transition: all 0.5s;
+  user-select: none;
+  cursor: pointer;
+}
+
+.project-media .image-container {
+  padding-block: 1rem;
+  padding-inline: 2rem;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+}
+
+.project-media {
+  display: flex;
+  border-left: 0.05rem solid rgb(51, 51, 51);
+  color: rgb(235, 235, 235);
+  flex-direction: column;
+
+  align-items: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  transition: all 0.5s;
+}
+
+.project-media .responsive-image:hover {
+  border-radius: 8px;
+  scale: 1.05;
+}
+
+.project-footer {
+  display: flex;
+  margin-top: auto;
+  background-color: rgb(51 51 51);
+  color: rgb(235, 235, 235);
+}
+
+.project-footer h2,
+.project-footer h3,
+.project-footer p {
+  margin: 3rem;
+  transition: all 0.5s;
+}
+
+.project-footer h2:hover {
+  color: rgb(0, 119, 255);
+  scale: 1.1;
+}
+
+.project-footer:hover {
+  user-select: none;
+  cursor: pointer;
 }

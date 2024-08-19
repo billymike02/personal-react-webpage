@@ -32,11 +32,7 @@ const HorizontalImageBrowser = ({ images }) => {
         ‹
       </button>
 
-      <div
-        className="image-container"
-        ref={scrollContainerRef}
-        onClick={() => setShowModal(true)}
-      >
+      <div className="image-container" onClick={() => setShowModal(true)}>
         {images.map((image, index) => (
           <img
             key={index}
