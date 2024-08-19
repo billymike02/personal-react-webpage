@@ -1,14 +1,15 @@
-// PortalComponent.js
 import React from "react";
-// Make sure to import the CSS for fade-in effect
+import { useSpring, animated } from "@react-spring/web";
 
-export default function PortalComponent({ onClose, show }) {
+export default function ModalContent({ onClose, show }) {
   return (
-    <div className={`modal ${show ? "show" : ""}`} onClick={onClose}>
-      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        <button onClick={onClose}>Close</button>
-        <p>I'm a modal dialog</p>
-      </div>
-    </div>
+    <animated.div className="modal">
+      <img
+        className="project-image"
+        src="https://github.com/billymike02/PlaylistPursuit/raw/main/demo_images/Simulator%20Screenshot%20-%20iPhone%2015%20-%202024-08-15%20at%2010.45.35.png"
+      />
+
+      {/* <button onClick={onClose}>Close</button> */}
+    </animated.div>
   );
 }

@@ -28,22 +28,15 @@ const HorizontalImageBrowser = ({ images }) => {
 
   return (
     <div className="horizontal-image-browser">
-      <button onClick={() => setShowModal(true)}>
-        Show modal using a portal
-      </button>
-      {showModal &&
-        createPortal(
-          <PortalComponent
-            show={showModal}
-            onClose={() => setShowModal(false)}
-          />,
-          document.body
-        )}
       <button className="arrow left" onClick={scrollLeft}>
         ‹
       </button>
 
-      <div className="image-container" ref={scrollContainerRef}>
+      <div
+        className="image-container"
+        ref={scrollContainerRef}
+        onClick={() => setShowModal(true)}
+      >
         {images.map((image, index) => (
           <img
             key={index}
@@ -53,6 +46,15 @@ const HorizontalImageBrowser = ({ images }) => {
           />
         ))}
       </div>
+      {showModal &&
+        createPortal(
+          <PortalComponent
+            show={showModal}
+            onClose={() => setShowModal(false)}
+          />,
+          document.body
+        )}
+
       <button className="arrow right" onClick={scrollRight}>
         ›
       </button>
