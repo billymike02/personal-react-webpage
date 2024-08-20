@@ -411,3 +411,58 @@ strong {
 .rogue-toolkit {
   background-color: rgb(120, 0, 0);
 }
+
+/* Here we define rules for mobile devices */
+@media (max-width: 1060px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Use 100% of the viewport height */
+    width: 100vw; /* Use 100% of the viewport width */
+  }
+
+  .sidebar {
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sidebar h1,
+  .sidebar a {
+    margin: 0;
+  }
+
+  .sidebar ul {
+    padding: 0px;
+  }
+
+  .padded-content {
+    overflow: visible;
+  }
+
+  .project-nav {
+    min-height: 10vh;
+    font-size: 1.5rem;
+  }
+
+  .project-index {
+    visibility: collapse;
+  }
+
+  .project-body {
+    flex-direction: column;
+  }
+
+  .content-body {
+    margin: 0rem;
+  }
+
+  .project-media .responsive-image {
+    scale: 0.6;
+  }
+
+  .project-media .responsive-image:hover {
+    scale: 0.6;
+    border-radius: 0px;
+  }
+}

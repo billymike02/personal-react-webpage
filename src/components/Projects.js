@@ -41,7 +41,9 @@ const Projects = () => {
           &#x2039; Prev
         </div>
         <div>
-          {currentIndex + 1} / {panels.length}
+          <div className="project-index">
+            {currentIndex + 1} / {panels.length}
+          </div>
         </div>
         <div className="nav-arrow" onClick={handleNext}>
           Next &#x203A;
