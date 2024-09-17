@@ -1,5 +1,6 @@
 import React from "react";
 import ViewableImage from "./ViewableImage.js";
+import styles from "./Project.module.css";
 
 const PlaylistPursuit = () => {
   const handleClick = () => {
@@ -83,21 +84,21 @@ const PlaylistPursuit = () => {
             ensure the toolkit remains robust and functional, aiming to address
             theoretical productivity needs in the field.
           </p>
-        </div>
 
-        <div className="project-media">
-          <ViewableImage
-            src="https://github.com/billymike02/RogueToolkit/raw/main/demo_images/Screenshot%202024-08-12%20at%2019.25.51.png"
-            className="image-container"
-          />
-          <ViewableImage
-            src="https://github.com/billymike02/RogueToolkit/raw/main/demo_images/Screenshot%202024-08-12%20at%2019.27.13.png"
-            className="image-container"
-          />
-          <ViewableImage
-            src="https://github.com/billymike02/RogueToolkit/raw/main/demo_images/Screenshot%202024-08-12%20at%2019.27.57.png"
-            className="image-container"
-          />
+          <div className={styles.media}>
+            <ViewableImage
+              src="https://github.com/billymike02/RogueToolkit/raw/main/demo_images/Screenshot%202024-08-12%20at%2019.25.51.png"
+              className="image-container"
+            />
+            <ViewableImage
+              src="https://github.com/billymike02/RogueToolkit/raw/main/demo_images/Screenshot%202024-08-12%20at%2019.27.13.png"
+              className="image-container"
+            />
+            <ViewableImage
+              src="https://github.com/billymike02/RogueToolkit/raw/main/demo_images/Screenshot%202024-08-12%20at%2019.27.57.png"
+              className="image-container"
+            />
+          </div>
         </div>
       </div>
       <div className="project-footer" onClick={handleClick}>

@@ -1,5 +1,7 @@
 import React from "react";
 import ViewableImage from "./ViewableImage.js";
+import ModalImage from "./ModalImage.js";
+import styles from "./Project.module.css";
 
 const PlaylistPursuit = () => {
   const handleClick = () => {
@@ -9,6 +11,8 @@ const PlaylistPursuit = () => {
       "noopener,noreferrer"
     );
   };
+
+  const maxWidthImages = "250px";
 
   return (
     <>
@@ -106,29 +110,34 @@ const PlaylistPursuit = () => {
             of software development, from initial design to final deployment,
             demonstrating my comprehensive skills in full-stack development.
           </p>
-        </div>
 
-        <div className="project-media">
-          <ViewableImage
-            src="https://github.com/billymike02/PlaylistPursuit/raw/main/demo_images/Simulator%20Screenshot%20-%20iPhone%2015%20-%202024-08-15%20at%2010.45.35.png"
-            className="image-container"
-          />
-          <ViewableImage
-            src="https://github.com/billymike02/PlaylistPursuit/raw/main/demo_images/Simulator%20Screenshot%20-%20iPhone%2015%20-%202024-08-15%20at%2010.46.05.png"
-            className="image-container"
-          />
-          <ViewableImage
-            src="https://github.com/billymike02/PlaylistPursuit/raw/main/demo_images/Simulator%20Screenshot%20-%20iPhone%2015%20-%202024-08-15%20at%2010.46.37.png"
-            className="image-container"
-          />
-          <ViewableImage
-            src="https://github.com/billymike02/PlaylistPursuit/raw/main/demo_images/Simulator%20Screenshot%20-%20iPhone%2015%20-%202024-08-15%20at%2010.47.06.png"
-            className="image-container"
-          />
-          <ViewableImage
-            src="https://github.com/billymike02/PlaylistPursuit/raw/main/demo_images/Simulator%20Screenshot%20-%20iPhone%2015%20-%202024-08-15%20at%2010.47.15.png"
-            className="image-container"
-          />
+          <div className={styles.media}>
+            <ViewableImage
+              src="https://github.com/billymike02/PlaylistPursuit/raw/main/demo_images/Simulator%20Screenshot%20-%20iPhone%2015%20-%202024-08-15%20at%2010.45.35.png"
+              className="image-container"
+              maxWidth={maxWidthImages}
+            />
+            <ViewableImage
+              src="https://github.com/billymike02/PlaylistPursuit/raw/main/demo_images/Simulator%20Screenshot%20-%20iPhone%2015%20-%202024-08-15%20at%2010.46.05.png"
+              className="image-container"
+              maxWidth={maxWidthImages}
+            />
+            <ViewableImage
+              src="https://github.com/billymike02/PlaylistPursuit/raw/main/demo_images/Simulator%20Screenshot%20-%20iPhone%2015%20-%202024-08-15%20at%2010.46.37.png"
+              className="image-container"
+              maxWidth={maxWidthImages}
+            />
+            <ViewableImage
+              src="https://github.com/billymike02/PlaylistPursuit/raw/main/demo_images/Simulator%20Screenshot%20-%20iPhone%2015%20-%202024-08-15%20at%2010.47.06.png"
+              className="image-container"
+              maxWidth={maxWidthImages}
+            />
+            <ViewableImage
+              src="https://github.com/billymike02/PlaylistPursuit/raw/main/demo_images/Simulator%20Screenshot%20-%20iPhone%2015%20-%202024-08-15%20at%2010.47.15.png"
+              className="image-container"
+              maxWidth={maxWidthImages}
+            />
+          </div>
         </div>
       </div>
       <div className="project-footer" onClick={handleClick}>

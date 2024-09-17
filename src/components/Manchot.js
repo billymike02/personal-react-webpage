@@ -1,5 +1,6 @@
 import React from "react";
 import ViewableImage from "./ViewableImage.js";
+import styles from "./Project.module.css";
 
 const Manchot = () => {
   const handleClick = () => {
@@ -84,21 +85,20 @@ const Manchot = () => {
             and ensure a cohesive gameplay experience. This project showcases my
             skills in both technical development and effective teamwork.
           </p>
-        </div>
-
-        <div className="project-media">
-          <ViewableImage
-            src="https://raw.githubusercontent.com/RandallCaler/CSC400/main/webpage/leveleditor1.png"
-            className="image-container"
-          />
-          <ViewableImage
-            src="https://raw.githubusercontent.com/RandallCaler/CSC400/main/webpage/leveleditor2.png"
-            className="image-container"
-          />
-          <ViewableImage
-            src="https://github.com/RandallCaler/CSC400/blob/main/webpage/banner.png?raw=true"
-            className="image-container"
-          />
+          <div className={styles.media}>
+            <ViewableImage
+              src="https://raw.githubusercontent.com/RandallCaler/CSC400/main/webpage/leveleditor1.png"
+              className="image-container"
+            />
+            <ViewableImage
+              src="https://raw.githubusercontent.com/RandallCaler/CSC400/main/webpage/leveleditor2.png"
+              className="image-container"
+            />
+            <ViewableImage
+              src="https://github.com/RandallCaler/CSC400/blob/main/webpage/banner.png?raw=true"
+              className="image-container"
+            />
+          </div>
         </div>
       </div>
       <div className="project-footer" onClick={handleClick}>

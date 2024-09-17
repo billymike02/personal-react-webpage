@@ -1,10 +1,8 @@
 import React from "react";
-import portraitImage from "../assets/images/portrait-surf.jpeg";
+import portraitImage from "../assets/images/portrait-surf.JPG";
 import PaddedContent from "./PaddedContent.js";
 import resume from "../assets/files/resume.pdf";
-import ModalContent from "./PortalComponent.js";
-import { createPortal } from "react-dom";
-import { useState } from "react";
+import ViewableImage from "./ViewableImage.js";
 
 const About = () => {
   const handleDownload = () => {
@@ -21,11 +19,9 @@ const About = () => {
 
   return (
     <PaddedContent backgroundColor="#DEDFE4" color={"black"}>
-      <div className="picture-container">
-        <img className="portrait" src={portraitImage} />
-      </div>
+      <ViewableImage src={portraitImage} maxWidth={"max(50%, 300px)"} />
 
-      <h2>About Bill</h2>
+      <h2 style={{ marginTop: "30px" }}>About Bill</h2>
       <p>
         I am a soon to be graduating Computer Science student with a background
         in <b>frontend development</b> and <b>graphics</b>.

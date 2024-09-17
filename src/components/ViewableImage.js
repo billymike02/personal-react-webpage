@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { createPortal } from "react-dom";
 import PortalComponent from "./PortalComponent.js";
+import ModalImage from "./ModalImage.js";
 
 const ViewableImage = ({ src, maxWidth, maxHeight }) => {
   const [showModal, setShowModal] = useState(false);
@@ -10,25 +11,24 @@ const ViewableImage = ({ src, maxWidth, maxHeight }) => {
     <>
       <div
         className="image-container"
-        style={{ maxWidth, maxHeight }}
+        style={{
+          maxWidth: maxWidth,
+          maxHeight: maxHeight,
+        }}
         onClick={() => setShowModal(true)}
       >
-        <img className="responsive-image" src={src} />
+        <img
+          className="responsive-image"
+          src={src}
+          style={{ borderRadius: "0.3rem" }}
+        />
       </div>
 
-      {showModal &&
-        createPortal(
-          <PortalComponent show={showModal} onClose={() => setShowModal(false)}>
-            <div
-              className="image-container"
-              style={{ maxWidth, maxHeight }}
-              onClick={() => setShowModal(true)}
-            >
-              <img className="responsive-image" src={src} />
-            </div>
-          </PortalComponent>,
-          document.body
-        )}
+      <ModalImage
+        src={src}
+        bShow={showModal}
+        onClose={() => setShowModal(false)}
+      />
     </>
   );
 };

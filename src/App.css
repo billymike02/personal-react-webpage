@@ -54,16 +54,6 @@ p {
   font-size: 1.3rem;
 }
 
-/* src/components/Sidebar.css */
-.sidebar {
-  justify-items: center;
-  align-items: center;
-  display: flex;
-  transition: all 0.3s;
-  overflow: hidden;
-  min-width: 40%;
-}
-
 .sidebar h1,
 a {
   margin-left: 2rem;
@@ -73,7 +63,7 @@ a {
 }
 
 .sidebar h1 {
-  transition: all 0.7s;
+  transition: background-color 0.7s, color 0.7s, scale 0.3s;
 }
 
 .sidebar h1:hover {
@@ -98,11 +88,10 @@ a {
   border-radius: 6px;
   align-items: flex-start;
   align-content: flex-start;
-
   font-family: "owners", sans-serif;
   font-size: 2rem;
   font-style: normal;
-  transition: all 0.1s;
+  transition: scale 0.1s, color 0.1s;
   transform-origin: center;
 }
 
@@ -156,7 +145,9 @@ a {
 }
 
 .content-body {
-  margin: 3rem;
+  margin-inline: 3rem;
+  padding: 0px;
+
   flex: 1;
 
   font-family: "owners", sans-serif;
@@ -227,8 +218,7 @@ strong {
 }
 
 .project-container:hover {
-  scale: 1.02;
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
 }
 
 .project-nav {
@@ -276,7 +266,7 @@ strong {
 
 .project-nav {
   background-color: rgb(51 51 51);
-  transition: all 0.1s;
+
   transform-origin: center bottom;
 }
 
@@ -308,31 +298,8 @@ strong {
   background-color: black;
 }
 
-.modal {
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  top: 0px;
-  left: 0px;
-  background: white;
-  background-color: rgba(82, 82, 82, 0.345);
-  backdrop-filter: blur(8px);
-  z-index: 1000; /* Ensure it is on top of other content */
-  transition: all 0.5s;
-  opacity: 0;
-  display: flex;
-  justify-content: center;
-}
-
 .modal:hover {
   opacity: 1;
-}
-
-.modal .responsive-image {
-  display: flex;
-  transform-origin: center;
-  scale: 0.9;
-  transition: all 0.3s;
 }
 
 .modal .project-image:hover {
@@ -419,6 +386,8 @@ strong {
     flex-direction: column;
     height: 100vh; /* Use 100% of the viewport height */
     width: 100vw; /* Use 100% of the viewport width */
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .sidebar {

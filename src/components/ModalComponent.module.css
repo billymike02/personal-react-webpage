@@ -1,0 +1,81 @@
+.modalOverlay {
+  position: fixed;
+  display: flex;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.277);
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.blur {
+  backdrop-filter: blur(10px);
+}
+
+.modalContent {
+  background-color: white;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25vw;
+  max-width: 350px;
+  min-width: fit-content;
+  transition: all 0.2s;
+  padding: 1rem;
+}
+
+.modalBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+  gap: 8px;
+  overflow: visible;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 6px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.modalContent button {
+  text-transform: uppercase;
+}
+
+.buttons .abort {
+  background-color: white;
+  color: black !important;
+  fill: black;
+  border: 0.1rem solid black;
+}
+
+.buttons .submit {
+  background-color: black;
+  color: white;
+}
+
+.buttons .destroy {
+  background-color: rgb(255, 0, 0);
+}
+
+.customSelect {
+  appearance: none;
+  height: 5vh;
+  font-size: 1rem;
+  font-weight: 500;
+
+  padding-left: 1rem;
+  width: 90%;
+  font-family: Arial, Helvetica, sans-serif;
+}
