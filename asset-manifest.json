@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/personal-react-webpage/static/css/main.131513ca.css",
-    "main.js": "/personal-react-webpage/static/js/main.9ccd66e1.js",
+    "main.css": "/personal-react-webpage/static/css/main.071d300a.css",
+    "main.js": "/personal-react-webpage/static/js/main.63cd509a.js",
     "static/js/453.8f11a781.chunk.js": "/personal-react-webpage/static/js/453.8f11a781.chunk.js",
     "static/media/portrait-surf.JPG": "/personal-react-webpage/static/media/portrait-surf.b7440355362285198dba.JPG",
     "static/media/resume.pdf": "/personal-react-webpage/static/media/resume.814b2c57a3c4651ea1bf.pdf",
     "index.html": "/personal-react-webpage/index.html",
-    "main.131513ca.css.map": "/personal-react-webpage/static/css/main.131513ca.css.map",
-    "main.9ccd66e1.js.map": "/personal-react-webpage/static/js/main.9ccd66e1.js.map",
+    "main.071d300a.css.map": "/personal-react-webpage/static/css/main.071d300a.css.map",
+    "main.63cd509a.js.map": "/personal-react-webpage/static/js/main.63cd509a.js.map",
     "453.8f11a781.chunk.js.map": "/personal-react-webpage/static/js/453.8f11a781.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.131513ca.css",
-    "static/js/main.9ccd66e1.js"
+    "static/css/main.071d300a.css",
+    "static/js/main.63cd509a.js"
   ]
 }
