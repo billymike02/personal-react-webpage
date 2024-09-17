@@ -367,17 +367,7 @@ strong {
   cursor: pointer;
 }
 
-.playlist-pursuit {
-  background-color: rgb(120 21 222);
-}
 
-.manchot {
-  background-color: rgb(44 103 144);
-}
-
-.rogue-toolkit {
-  background-color: rgb(120, 0, 0);
-}
 
 /* Here we define rules for mobile devices */
 @media (max-width: 1060px) {

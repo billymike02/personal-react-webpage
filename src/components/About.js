@@ -1,8 +1,8 @@
 import React from "react";
 import portraitImage from "../assets/images/portrait-surf.JPG";
-import PaddedContent from "./PaddedContent.js";
+
 import resume from "../assets/files/resume.pdf";
-import ViewableImage from "./ViewableImage.js";
+import ViewableImage from "./ModalImage.js";
 
 const About = () => {
   const handleDownload = () => {
@@ -18,7 +18,7 @@ const About = () => {
   };
 
   return (
-    <PaddedContent backgroundColor="#DEDFE4" color={"black"}>
+    <div className="content-body" backgroundColor="#DEDFE4" color={"black"}>
       <ViewableImage src={portraitImage} maxWidth={"max(50%, 300px)"} />
 
       <h2 style={{ marginTop: "30px" }}>About Bill</h2>
@@ -40,7 +40,7 @@ const About = () => {
       <div className="resume-button" onClick={handleDownload}>
         Download Resume
       </div>
-    </PaddedContent>
+    </div>
   );
 };
 
