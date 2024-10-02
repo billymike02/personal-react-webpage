@@ -28,8 +28,8 @@ const About = () => {
       </p>
       <h2>Technical Skills & Abilities</h2>
       <p className="interest-cloud">
-        Frontend Development • Web Development • Backend Development • Computer
-        Graphics • Mobile Development • Figma (UI/UX) • Git
+        Frontend (Mobile/Web) Development • Computer Graphics (OpenGL) • Backend
+        Development • Git
       </p>
       <h2>Additional Interests</h2>
       <p className="interest-cloud">

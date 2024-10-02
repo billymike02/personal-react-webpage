@@ -11,9 +11,27 @@ const ProjectInfo = ({
 
   return (
     <>
-      <div className="project-heading" style={{ backgroundColor: accentColor }}>
-        <h2>{title}</h2>
-        <h3>{timeline}</h3>
+      <div
+        className="project-heading"
+        style={{
+          backgroundColor: accentColor,
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
+        <h2 style={{ fontSize: "3rem" }}>{title}</h2>
+        <h3
+          style={{
+            fontSize: "1.7rem",
+
+            fontWeight: "500",
+            textTransform: "uppercase",
+          }}
+        >
+          {timeline}
+        </h3>
       </div>
       <div className="project-body">
         <div className="project-info">{children}</div>

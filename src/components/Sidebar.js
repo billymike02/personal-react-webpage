@@ -18,7 +18,7 @@ const Sidebar = () => {
         }}
       >
         <ul style={{ marginTop: "0px" }}>
-          <h1>Bill Woodward</h1>
+          <h1 style={{ fontWeight: "700" }}>Bill Woodward</h1>
 
           <li>
             <Link to="/about">About</Link>
