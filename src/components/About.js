@@ -38,7 +38,7 @@ const About = () => {
       </p>
 
       <div className="resume-button" onClick={handleDownload}>
-        Download Resume
+        Resume
       </div>
     </div>
   );

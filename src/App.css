@@ -5,6 +5,11 @@
   width: 100vw; /* Use 100% of the viewport width */
 }
 
+div {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
 h1,
 h2,
 h3,
@@ -79,7 +84,6 @@ a {
   border-radius: 6px;
   align-items: flex-start;
   align-content: flex-start;
-  font-family: "Arial", sans-serif;
   font-size: 2rem;
   font-style: normal;
   transition: scale 0.1s, color 0.1s;
@@ -243,13 +247,6 @@ a {
   color: rgb(0, 140, 255);
 }
 
-/* this is for div's that are buttons */
-.nav-arrow,
-.resume-button {
-  user-select: none;
-  cursor: pointer;
-}
-
 .project-nav {
   background-color: rgb(51 51 51);
 
@@ -304,8 +301,6 @@ a {
   width: auto; /* Maintain aspect ratio */
   height: auto; /* Maintain aspect ratio */
   transition: all 0.5s;
-  user-select: none;
-  cursor: pointer;
 }
 
 .project-info {
@@ -350,7 +345,6 @@ a {
 
 .project-footer:hover {
   user-select: none;
-  cursor: pointer;
 }
 
 /* Here we define rules for mobile devices */
