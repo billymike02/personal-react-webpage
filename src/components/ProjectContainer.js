@@ -18,10 +18,11 @@ const ProjectInfo = ({
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
+          flexWrap: "wrap",
           alignItems: "center",
         }}
       >
-        <h2 style={{ fontSize: "3rem" }}>{title}</h2>
+        <h2 style={{ fontSize: "clamp(1vw, 3rem, 3rem)" }}>{title}</h2>
         <h3
           style={{
             fontSize: "1.7rem",

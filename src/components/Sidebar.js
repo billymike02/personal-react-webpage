@@ -1,12 +1,8 @@
 // src/components/Sidebar.js
 import React from "react";
 import { Link } from "react-router-dom";
-import { useMediaQuery } from "react-responsive";
 
 const Sidebar = () => {
-  const isDesktop = useMediaQuery({ minWidth: 1224 });
-  const isMobile = useMediaQuery({ maxWidth: 1224 });
-
   return (
     <>
       <nav
@@ -16,18 +12,26 @@ const Sidebar = () => {
           justifyContent: "center",
           alignItems: "flex-start",
           flexDirection: "column",
+          minWidth: "36%",
         }}
       >
-        <h1>Bill Woodward</h1>
+        <div className="name-container">
+          <h1>Bill Woodward</h1>
+        </div>
 
-        <Link to="/about">About</Link>
+        <Link to="/about" style={{ cursor: "pointer" }}>
+          About
+        </Link>
 
-        <Link to="/projects">Projects</Link>
+        <Link to="/projects" style={{ cursor: "pointer" }}>
+          Projects
+        </Link>
 
         <a
           href="https://www.linkedin.com/in/wmwoodward2002/"
           target="_blank"
           rel="noopener noreferrer"
+          style={{ cursor: "pointer" }}
         >
           LinkedIn
         </a>
@@ -36,6 +40,7 @@ const Sidebar = () => {
           href="https://github.com/billymike02"
           target="_blank"
           rel="noopener noreferrer"
+          style={{ cursor: "pointer" }}
         >
           GitHub
         </a>

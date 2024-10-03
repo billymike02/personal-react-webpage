@@ -3,6 +3,8 @@ import portraitImage from "../assets/images/portrait-surf.JPG";
 
 import resume from "../assets/files/resume.pdf";
 import ViewableImage from "./ModalImage.js";
+import { FaFileDownload } from "react-icons/fa";
+import { MdFileDownload } from "react-icons/md";
 
 const About = () => {
   const handleDownload = () => {
@@ -37,8 +39,32 @@ const About = () => {
         Public Speaking
       </p>
 
-      <div className="resume-button" onClick={handleDownload}>
-        Resume
+      <div
+        className="resume-button"
+        style={{
+          cursor: "pointer",
+          justifyContent: "center",
+          alignItems: "center",
+          display: "flex",
+          gap: "8px",
+        }}
+        onClick={handleDownload}
+      >
+        <a
+          style={{
+            margin: "0px",
+            fontSize: "1.4rem",
+            color: "rgb(235, 235, 235)",
+            fontWeight: "bold",
+          }}
+        >
+          Resume
+        </a>
+
+        <MdFileDownload
+          style={{ fill: "rgb(235, 235, 235)" }}
+          size={30}
+        ></MdFileDownload>
       </div>
     </div>
   );

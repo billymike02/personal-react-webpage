@@ -71,12 +71,12 @@ const ModalImage = ({ src, bShow, onClose }) => {
           <img
             src={src}
             style={{
-              maxHeight: "90vh",
-              maxWidth: "90vw",
+              maxHeight: "75vh",
+              maxWidth: "75vw",
               objectFit: "contain",
               userSelect: "none",
               WebkitUserSelect: "none",
-              borderRadius: "1rem",
+              borderRadius: "0.4rem",
             }}
           />
         </div>
@@ -102,7 +102,7 @@ const ViewableImage = ({ src, maxWidth, maxHeight }) => {
         <img
           className="responsive-image"
           src={src}
-          style={{ borderRadius: "0.3rem" }}
+          style={{ borderRadius: "0.0rem" }}
         />
       </div>
 

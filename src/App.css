@@ -5,9 +5,10 @@
   width: 100vw; /* Use 100% of the viewport width */
 }
 
-div {
+* {
   user-select: none;
   -webkit-user-select: none;
+  cursor: default;
 }
 
 h1,
@@ -59,17 +60,22 @@ a {
   color: rgb(51 51 51);
 }
 
-.sidebar h1 {
-  transition: background-color 0.7s, color 0.7s, scale 0.3s;
-}
-
-.sidebar h1:hover {
+.name-container:hover {
   background-color: black;
   scale: 1.01;
 }
 
-.sidebar h1 {
+.name-container {
   background-color: rgb(51 51 51);
+  display: flex;
+  width: min-content;
+  height: min-content;
+  margin-left: 2.4rem;
+  transition: background-color 0.7s, color 0.7s, scale 0.3s;
+}
+
+.name-container h1 {
+  margin-left: 0px;
   color: rgb(235, 235, 235);
 }
 
@@ -237,7 +243,7 @@ a {
   font-size: 1.1rem;
   justify-content: center;
   text-transform: uppercase;
-  width: 30%;
+  width: 240px;
   right: 0;
   transition: all 0.1s;
 }
@@ -251,34 +257,6 @@ a {
   background-color: rgb(51 51 51);
 
   transform-origin: center bottom;
-}
-
-.demo-image-container {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-}
-
-.demo-image {
-  height: auto;
-  width: 16%;
-  border: 2px solid black;
-  border-radius: 10px;
-}
-
-.embed-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
-.controller {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 50px;
-  background-color: black;
 }
 
 .modal:hover {
@@ -367,6 +345,10 @@ a {
   .sidebar h1,
   .sidebar a {
     margin: 0;
+  }
+
+  .name-container {
+    margin: 0px;
   }
 
   .sidebar ul {
